@@ -105,7 +105,8 @@ body::before {
 
 body.dark {
   background: light-dark(var(--bg-light), var(--bg-dark));
-  overflow: hidden;
+  overflow-x: hidden; 
+  overflow-y: auto;  
   color: #f4f4f4;
   --line: hsl(0 0% 100% / 0.3);
   color-scheme: dark only;
@@ -251,4 +252,5 @@ button.copyBtn:hover {
 .dark .command-card pre {
   color: #ccc;
   background: #555;
+
 }
