@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devos Challanger</title>
+
+  <link rel="stylesheet" href="CSS/Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Desafio Devos: Consumo de API</h1>
+        <div class="btn" id="toggleTheme">
+          <div class="btn__indicator">
+            <div class="btn__icon-container">
+            <i class="btn__icon fa-solid"></i>
+          </div>
+        </div>
+      </div> 
+    </header>
+
+    <!-- input de pesquisa -->
+    <input 
+      id="searchInput"
+      type="text" 
+      placeholder="Pesquise o(s) comando(s) aqui!"
+      class="search"
+    />
+
+    <!-- Loader -->
+    <div id="loader" class="loader">Carregando tópicos...</div>
+
+    <!-- tópicos -->
+    <div id="topicsContainer" class="topics hidden"></div>
+
+    <!-- comandos -->
+    <div id="commandsSection" class="commands hidden">
+      <h2 id="topicTitle"></h2>
+      <p id="topicDesc"></p>
+      <div id="commandsList"></div>
+    </div>
+  </div>
+
+  <script src="JS/Script.js"></script>
+  <script src=""></script>
+  
+</body>
+</html>
